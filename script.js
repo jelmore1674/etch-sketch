@@ -1,6 +1,7 @@
 /** @format */
 
 const container = document.getElementById("container");
+const grid = document.querySelector(".grid-item");
 
 function makeRows(rows, cols) {
     container.style.setProperty("--grid-rows", rows);
@@ -9,12 +10,12 @@ function makeRows(rows, cols) {
         let cell = document.createElement("div");
         cell.innerText = c + 1;
         container.appendChild(cell).className = "grid-item";
+        cell.addEventListener("mouseover", paint);
     }
 }
 
 function getGrid() {
-    let row = prompt("Select Grid size 4-64");
-
+    row = prompt("Select Grid size 4-100");
     if (row < 4) {
         row = 4;
     } else if (row >= 100) {
@@ -22,8 +23,17 @@ function getGrid() {
     } else {
         row = row;
     }
-    let col = row;
+    col = row;
     makeRows(row, col);
 }
 
-getGrid();
+function paint(e) {
+    chooseColor = "black";
+    e.target.style.backgroundColor = chooseColor;
+}
+
+function game() {
+    makeRows(16, 16);
+}
+
+game();
