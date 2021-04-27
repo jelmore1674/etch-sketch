@@ -17,7 +17,9 @@ function getGrid() {
 
     if (row < 4) {
         row = 4;
-    } else if (row >= 4) {
+    } else if (row >= 100) {
+        row = 100;
+    } else {
         row = row;
     }
     let col = row;
