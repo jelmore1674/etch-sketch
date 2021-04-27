@@ -1,7 +1,15 @@
 /** @format */
 
 const container = document.getElementById("container");
-const grid = document.querySelector(".grid-item");
+
+function erase() {
+    const gridItems = document.querySelectorAll("#container > div");
+
+    gridItems.forEach((item) => {
+        item.style.backgroundColor = "#fff";
+        item.style.opacity = "1";
+    });
+}
 
 function makeRows(rows, cols) {
     container.style.setProperty("--grid-rows", rows);
@@ -27,13 +35,24 @@ function getGrid() {
     makeRows(row, col);
 }
 
+function reset() {
+    const gridItems = document.querySelectorAll("#container > div");
+
+    gridItems.forEach((item) => {
+        item.style.backgroundColor = "#fff";
+        item.style.opacity = "1";
+    });
+}
+
 function paint(e) {
-    chooseColor = "black";
-    e.target.style.backgroundColor = chooseColor;
+    const colorChoice = ["#3d5a80", "#98c1d9", "#e0fbfc", "#ee6c4d", "#293241"];
+    const randomColor = Math.floor(Math.random() * colorChoice.length);
+    e.target.style.opacity = 0.6;
+    e.target.style.backgroundColor = colorChoice[randomColor];
 }
 
 function game() {
-    makeRows(16, 16);
+    getGrid(16, 16);
 }
 
 game();
