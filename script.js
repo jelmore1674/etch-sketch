@@ -14,11 +14,11 @@ function makeRows(size) {
 }
 
 function getGrid() {
-    row = prompt("Select Grid Size 4-100");
+    row = prompt("Select Grid Size 4-64");
     if (row < 4) {
         row = 4;
-    } else if (row >= 100) {
-        row = 100;
+    } else if (row >= 64) {
+        row = 64;
     } else {
         row = row;
     }
