@@ -58,6 +58,7 @@ button {
 button:hover {
     background-color: #3d5a80;
     color: antiquewhite;
+    transform: scale(1.1);
 }
 
 #btn {
