@@ -21,3 +21,8 @@ So far, I have a grid created with a prompt allowing you to select the size of
 the grid. I have also setup hover within the CSS file.
 
 <!-- *To create the grid, my search results led me to stackoverflow.  https://stackoverflow.com/questions/57550082/creating-a-16x16-grid-using-javascript* -->
+
+### _Update 2_
+
+I have the project working. All I have left to do is some slight CSS and some
+refactoring to clean up the code.

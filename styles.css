@@ -50,7 +50,7 @@ button {
     background-color: #ee6c4d;
     padding: 15px;
     margin-top: 10px;
-    border: 1px solid #293241;
+    border: 2px solid #293241;
     border-radius: 10%;
     max-width: 50%;
 }
@@ -61,7 +61,7 @@ button:hover {
 }
 
 #btn {
-    max-width: 275px;
+    max-width: 285px;
     margin: auto;
     display: flex;
     flex-direction: row;
