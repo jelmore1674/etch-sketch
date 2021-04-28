@@ -30,14 +30,13 @@ h1 {
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
-    height: 560px;
-    width: 560px;
+    height: 460px;
+    width: 460px;
     padding: 0px;
     border: 2px solid #000;
     display: grid;
     grid-gap: 0px;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-columns: repeat(10, 1fr);
     box-shadow: 10px 5px 5px #ee6c4d;
 }
 
@@ -45,6 +44,18 @@ h1 {
     border: 1px solid #000;
     text-align: center;
     background-color: white;
+}
+
+button {
+    background-color: #ee6c4d;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    margin-top 10px;
+}
+
+#reset {
+    margin-bottom: 10px;
 }
 
 
